@@ -1,0 +1,24 @@
+<ion-view view-title="Inicio, hoy es {{ getDateNow()  }}">
+  <ion-content class="padding">
+    <h2 class="text-center">Hola, Jose</h2>
+    <div class="text-lg text-center">
+      <p>
+        Seguramene te estas pregunando, como sé tu nombre.
+      </p>
+      <p>
+        No, te preocupes ya que soy tu amigo digital.
+      </p>
+      <div>
+        <img src="img/robot.png">
+      </div>
+      <p>Nos presentaron el día 10 de noviembre.</p>
+      <p>Y voy a ayudarte a recordar algunas cosas aburridas, y otras divertidas.</p>
+      <hr>
+      <h4 class="text-center">Bueno, vamos a empezar!</h4>
+      <p>La hora es: <span style="background: #ccc; padding: 5px">{{ getTimeNow()  }}</span></p>
+      <p>Entonces es hora para:<p>
+      <div ng-repeat="t in getActivitieCurrent()" style="margin-top: 30px">
+          <span style="background: yellow; padding: 10px;">{{t.todo  }}</span></div>
+    </div>
+  </ion-content>
+</ion-view>
