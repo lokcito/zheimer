@@ -17,3 +17,4 @@ $ ionic serve
 ```
 ## Link de la aplicación
 http://zheimer.rayrojas.info/
+https://calm-beach-72906.herokuapp.com/#/tab/dash
